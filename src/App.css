@@ -1,0 +1,133 @@
+:root {
+  --Strong-cyan: hsl(172, 67%, 45%);
+  --Very-dark-cyan: hsl(183, 100%, 15%);
+  --Dark-grayish-cyan: hsl(186, 14%, 43%);
+  --Grayish-cyan: hsl(184, 14%, 56%);
+  --Light-grayish-cyan: hsl(185, 41%, 84%);
+  --Very-light-grayish-cyan: hsl(189, 41%, 97%);
+  --White: hsl(0, 0%, 100%);
+}
+
+#root {
+  height: calc(100vh - 8.542em);
+}
+
+.logo {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 2rem;
+}
+
+.calculator {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  border-radius: 10px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+  padding: 2rem;
+  margin-top: 3rem;
+  height: 100%;
+}
+
+.calculator__inputbox div {
+  background-color: var(--Very-light-grayish-cyan);
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  border-radius: 5px;
+}
+
+.calculator__inputbox div img {
+  height: 100%;
+}
+
+.input__label {
+  color: var(--Dark-grayish-cyan);
+}
+
+.calculator__input {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 1.5rem;
+  color: var(--Very-dark-cyan);
+  text-align: right;
+  padding: 0rem 0.5rem;
+}
+
+.calculator__input::placeholder {
+  color: var(--Grayish-cyan);
+}
+
+.calculator__percentages {
+  margin: 2rem 0rem;
+}
+
+.percentages__box {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin: 1rem 0rem;
+}
+
+.percentages__box button {
+  color: var(--White);
+  background-color: var(--Very-dark-cyan);
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0rem;
+}
+
+.percentages__box [aria-selected="true"] {
+  color: var(--Very-dark-cyan);
+  background-color: var(--Strong-cyan);
+}
+
+.calculator__outputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: var(--Very-dark-cyan);
+  border-radius: 10px;
+  padding: 1rem;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.output__display {
+  display: flex;
+  justify-content: space-between;
+}
+
+.output__display + .output__display {
+  margin-top: 2rem;
+}
+
+.output__title {
+  color: var(--White);
+}
+
+.output__ratio {
+  color: var(--Grayish-cyan);
+  font-size: 13px;
+  margin-top: 0.1rem;
+}
+
+.output__value {
+  color: var(--Strong-cyan);
+  font-size: 2rem;
+}
+
+.output__reset {
+  margin-top: 1rem;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  background-color: var(--Strong-cyan);
+  color: var(--Very-dark-cyan);
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem 0rem;
+}
