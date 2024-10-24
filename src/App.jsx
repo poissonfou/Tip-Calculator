@@ -13,7 +13,7 @@ function App() {
             <label htmlFor="bill" className="input__label">
               Bill
             </label>
-            <div>
+            <div className="input__container">
               <img src={dollarSign} alt="icon of a dollar sign" />
               <input
                 placeholder="0"
@@ -42,10 +42,16 @@ function App() {
             </div>
           </div>
           <div className="calculator__inputbox">
-            <label className="input__label" htmlFor="people">
-              Number of people
-            </label>
-            <div>
+            <div className="label__container">
+              <label className="input__label" htmlFor="people">
+                Number of people
+              </label>
+              <p className="error__msg" hidden>
+                Can't be zero
+              </p>
+            </div>
+
+            <div className="input__container">
               <img src={person} alt="icon of a person" />
               <input
                 placeholder="0"
@@ -74,7 +80,9 @@ function App() {
               <p className="output__value">$0.00</p>
             </div>
           </div>
-          <button className="output__reset">Reset</button>
+          <button className="output__reset" disabled>
+            Reset
+          </button>
         </div>
       </main>
     </>
