@@ -27,7 +27,6 @@
   border-bottom-right-radius: 0px;
   padding: 2rem;
   margin-top: 3rem;
-  height: 100%;
 }
 
 .label__container {
@@ -189,12 +188,13 @@ input[type="number"] {
   padding: 0.5rem 0rem;
 }
 
-.output__reset:not(:disabled):hover {
+.output__reset:hover {
   background-color: rgb(119, 233, 218);
   cursor: pointer;
 }
 
-[disabled] {
+.output__reset--deactivated {
+  pointer-events: none;
   opacity: 40%;
 }
 
