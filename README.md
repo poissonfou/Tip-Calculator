@@ -1,8 +1,3 @@
-# React + Vite
+<p>Frontend Mentor's Tip Calculator Challenge, created using React</p>
+<img src="https://github.com/user-attachments/assets/0a1e5f75-53d9-465b-a81e-962d03454fbc">
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
